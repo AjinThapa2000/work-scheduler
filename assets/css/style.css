@@ -36,8 +36,9 @@ textarea {
 }
 
 .second-bar {
-	position: relative;
-	margin-left: 700px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 	padding: 0;
 	width: 200px;
 	height: 200px;
