@@ -1,0 +1,239 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color:rgb(255, 239, 117) ;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+  padding: 10px;
+}
+/**clock**/
+
+#clock {
+	font-family: 'Montserrat', "Segoe UI", Segoe, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	position:absolute;
+	text-align: center;
+	line-height: 200px;
+	width: 200px;
+	color:white;
+	display:block;
+	z-index: 5;
+}
+
+.second-bar {
+	position: relative;
+	margin-left: 565px;
+	padding: 0;
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.second-bar:after {
+	border: none;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: block;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	background-color: black;
+	content: " ";
+}
+
+.left-half-clipper {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	clip: rect(0, 200px, 200px, 100px);	
+}
+
+.second-bar.over-30s left-half-clipper {
+	
+	clip: rect(auto,auto,auto,auto);
+}
+
+.progress-bar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	clip: rect(0, 100px, 200px,0);
+	border: 30px solid #1c23ed;
+	box-sizing: border-box;
+}
+
+.second-bar.over-30s .first-half-bar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #1c23ed;
+  clip: rect(0, 200px, 200px, 100px);
+}
+
+.second-bar:not(.over-30s) .first-half-bar {
+	display: none;
+}
+
+.second-bar.s0  .progress-bar { display: none; }
+.second-bar.s1  .progress-bar { transform: rotate(6.10deg); }
+.second-bar.s2  .progress-bar { transform: rotate(12.20deg); }
+.second-bar.s3  .progress-bar { transform: rotate(18.30deg); }
+.second-bar.s4  .progress-bar { transform: rotate(24.40deg); }
+.second-bar.s5  .progress-bar { transform: rotate(30.50deg); }
+.second-bar.s6  .progress-bar { transform: rotate(36.60deg); }
+.second-bar.s7  .progress-bar { transform: rotate(42.70deg); }
+.second-bar.s8  .progress-bar { transform: rotate(48.80deg); }
+.second-bar.s9  .progress-bar { transform: rotate(54.90deg); }
+.second-bar.s10 .progress-bar { transform: rotate(61.10deg); }
+.second-bar.s11 .progress-bar { transform: rotate(66.20deg); }
+.second-bar.s12 .progress-bar { transform: rotate(72.30deg); }
+.second-bar.s13 .progress-bar { transform: rotate(78.40deg); }
+.second-bar.s14 .progress-bar { transform: rotate(84.50deg); }
+.second-bar.s15 .progress-bar { transform: rotate(90.60deg); }
+.second-bar.s16 .progress-bar { transform: rotate(96.70deg); }
+.second-bar.s17 .progress-bar { transform: rotate(102.80deg); }
+.second-bar.s18 .progress-bar { transform: rotate(108.90deg); }
+.second-bar.s19 .progress-bar { transform: rotate(115.10deg); }
+.second-bar.s20 .progress-bar { transform: rotate(120.200deg); }
+.second-bar.s21 .progress-bar { transform: rotate(126.300deg); }
+.second-bar.s22 .progress-bar { transform: rotate(132.40deg); }
+.second-bar.s23 .progress-bar { transform: rotate(138.50deg); }
+.second-bar.s24 .progress-bar { transform: rotate(144.60deg); }
+.second-bar.s25 .progress-bar { transform: rotate(150.70deg); }
+.second-bar.s26 .progress-bar { transform: rotate(156.80deg); }
+.second-bar.s27 .progress-bar { transform: rotate(162.90deg); }
+.second-bar.s28 .progress-bar { transform: rotate(169.10deg); }
+.second-bar.s29 .progress-bar { transform: rotate(174.20deg); }
+.second-bar.s30 .progress-bar { transform: rotate(180.30deg); }
+.second-bar.s31 .progress-bar { transform: rotate(186.40deg); }
+.second-bar.s32 .progress-bar { transform: rotate(192.50deg); }
+.second-bar.s33 .progress-bar { transform: rotate(198.60deg); }
+.second-bar.s34 .progress-bar { transform: rotate(204.70deg); }
+.second-bar.s35 .progress-bar { transform: rotate(210.80deg); }
+.second-bar.s36 .progress-bar { transform: rotate(216.90deg); }
+.second-bar.s37 .progress-bar { transform: rotate(223.10deg); }
+.second-bar.s38 .progress-bar { transform: rotate(228.20deg); }
+.second-bar.s39 .progress-bar { transform: rotate(234.30deg); }
+.second-bar.s40 .progress-bar { transform: rotate(240.40deg); }
+.second-bar.s41 .progress-bar { transform: rotate(246.50deg); }
+.second-bar.s42 .progress-bar { transform: rotate(252.60deg); }
+.second-bar.s43 .progress-bar { transform: rotate(258.70deg); }
+.second-bar.s44 .progress-bar { transform: rotate(264.80deg); }
+.second-bar.s45 .progress-bar { transform: rotate(270.90deg); }
+.second-bar.s46 .progress-bar { transform: rotate(277.10deg); }
+.second-bar.s47 .progress-bar { transform: rotate(282.20deg); }
+.second-bar.s48 .progress-bar { transform: rotate(288.30deg); }
+.second-bar.s49 .progress-bar { transform: rotate(294.40deg); }
+.second-bar.s50 .progress-bar { transform: rotate(300.50deg); }
+.second-bar.s51 .progress-bar { transform: rotate(306.60deg); }
+.second-bar.s52 .progress-bar { transform: rotate(312.70deg); }
+.second-bar.s53 .progress-bar { transform: rotate(318.80deg); }
+.second-bar.s54 .progress-bar { transform: rotate(324.90deg); }
+.second-bar.s55 .progress-bar { transform: rotate(331.10deg); }
+.second-bar.s56 .progress-bar { transform: rotate(336.20deg); }
+.second-bar.s57 .progress-bar { transform: rotate(342.30deg); }
+.second-bar.s58 .progress-bar { transform: rotate(348.40deg); }
+.second-bar.s59 .progress-bar { transform: rotate(360.0deg); }
+
+
+.lead{
+  font-family:cursive;
+}
+
+.note {
+  white-space: pre-wrap;
+}
+
+.timerblock {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
+
+.time {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #fe1221;
+  color: white;
+}
+
+.present {
+  background-color: #0fed2d;
+  color: white;
+}
+
+.future {
+  background-color: #d2ed0a;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #7716f5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**adjusting resolution with different screen size**/
+
+@media screen and (max-width: 768px), screen and (max-width: 575px) {
+  .row {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .second-bar{
+    height: auto;
+    margin: auto;
+  }
+
+  .time {
+    padding-right: 17%;
+  }
+
+  .saveBtn {
+    border: 0;
+    border-radius: 0.25rem;
+    height: 50px;
+  }
+
+  textarea {
+    min-height: 85px;
+    border: 0;
+  }
+}
