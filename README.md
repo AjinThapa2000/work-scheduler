@@ -22,4 +22,4 @@ According on whether the time is in the past (grey), present (blue), or future, 
 
 # Screenshot
 
-![](images/workscheduler.JPG)
+![](images/workscheduler.png)
