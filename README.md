@@ -21,3 +21,5 @@ According on whether the time is in the past (grey), present (blue), or future, 
 # Deployed Link:https://ajinthapa2000.github.io/work-scheduler/
 
 # Screenshot
+
+![](images/workscheduler.JPG)
