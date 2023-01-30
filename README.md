@@ -18,6 +18,6 @@ According on whether the time is in the past (grey), present (blue), or future, 
 
 5.CSS
 
-# Deployed Link:
+# Deployed Link:https://ajinthapa2000.github.io/work-scheduler/
 
 # Screenshot
