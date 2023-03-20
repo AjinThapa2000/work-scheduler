@@ -20,6 +20,6 @@ According on whether the time is in the past (RED), present (Green), or future(y
 
 # Deployed Link:https://ajinthapa2000.github.io/work-scheduler/
 
-# Screenshot
+# Project live record
 
-![](images/workscheduler.png)
+![](images/project.gif)
